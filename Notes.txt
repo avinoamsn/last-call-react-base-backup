@@ -1,0 +1,33 @@
+src/components/Navmenu.js: add the link to the new controller as a new navigation link (using a '<LinkContainer>' element) with the route e.g. '/newroute'
+
+src/components/Home.js: add the description of the service
+
+Controllers/BaseController.cs: Copy this file to a new .CS file in the same folder, naming it with your new service name. E.g. Suppliers.cs
+-- In that file change the public class name to the new controller name, e.g. SuppliersController.
+-- Find the function decorated with the [HttpGet("[action"])] attribute and rename that function to the name of your new service, e.g. RegisterSupplier().
+-- Modify the code in this .CS file to reflect the functionality you are building.
+
+src/components/BaseService.js: Copy this file to a new .JS file in the same folder, naming it with your new service name. E.g. RegisterSupplier.js
+-- change the 'export class ClassName extends Component {' line (line 3) to use the name of the new service e.g. 'RegisterSupplier'
+-- change the next line 'displayName = ClassName.name' to be the chosen class name
+-- change the 'fetch' statement on line 11 to the name of your new service. This is composed of the file name you chose for your new controller / the function name for the service
+-- change other 'BaseService' references to name of your new service
+
+src/App.js: 
+-- add the new route, in the render() function naming your new service
+-- add the import statement at the head of the file referencing your new JS implementation file.
+
+
+https://reactjs.org/docs/getting-started.html
+
+https://fb.me/react-devtools
+
+
+
+
+
+
+
+
+
+
